@@ -10,7 +10,7 @@ import time
 # -------------------------------------------------
 TICKERS_FILE = "Ticker.csv"          # your ticker list
 DB_FILE = "ftse250_data.db"          # the SQLite database
-PERIOD = "5d"                        # Changed to 5d from 1yrs
+PERIOD = "10d"                        # Changed to 10d from 1yrs
 INTERVAL = "1d"                      # daily bars
 BATCH_SIZE = 20                      # download in small batches (safer)
 
