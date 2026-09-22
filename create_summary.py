@@ -17,7 +17,7 @@ print(f"Latest date in database: {latest_date}")
 
 # Pull recent data (enough for 1 week calculation)
 df = pd.read_sql_query("""
-    SELECT ticker, date, close
+    SELECT ticker, date, close, volume
     FROM prices
     WHERE date >= date(?, '-14 days')
     ORDER BY ticker, date
@@ -42,13 +42,17 @@ for ticker, group in df.groupby("ticker"):
         week_ago_close = group.iloc[0]["close"]
     
     pct_change = ((latest_close - week_ago_close) / week_ago_close) * 100
+
+    # Get the volume of the latest day
+    latest_volume = group.iloc[-1]["volume"] if "volume" in group.columns else None
     
     summary_rows.append({
         "ticker": ticker,
         "latest_date": latest_day,
         "latest_close": round(float(latest_close), 2),
         "week_ago_close": round(float(week_ago_close), 2),
-        "pct_change_1w": round(float(pct_change), 2)
+        "pct_change_1w": round(float(pct_change), 2),
+        "volume": int(latest_volume) if latest_volume is not None else None
     })
 
 summary = pd.DataFrame(summary_rows)
