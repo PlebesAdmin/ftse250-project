@@ -61,5 +61,10 @@ summary = summary.sort_values("pct_change_1w", ascending=False)
 filename = f"ftse250_weekly_summary_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
 summary.to_excel(filename, index=False)
 
+# Also save a JSON version for the GitHub Pages dashboard
+json_filename = "summary.json"
+summary.to_json(json_filename, orient="records", indent=2)
+
+print(f"JSON summary created: {json_filename}")
 print(f"Summary created: {filename}")
 print(f"Tickers: {len(summary)}")
