@@ -176,7 +176,10 @@
 
     function renderTable() {
       const search = document.getElementById("search").value.toLowerCase().trim();
-      let filtered = allData.filter(r => r.ticker.toLowerCase().includes(search));
+      let filtered = allData.filter(r => 
+        (r.ticker || "").toLowerCase().includes(search) || 
+        (r.name || "").toLowerCase().includes(search)
+      );
 
       // Sort
       filtered.sort((a, b) => {
@@ -185,7 +188,7 @@
         if (typeof va === "string") {
           return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
         }
-        return sortAsc ? va - vb : vb - va;
+        return sortAsc ? (va - vb) : (vb - va);
       });
 
       let html = `
@@ -212,14 +215,17 @@
         if (pct < 0) pctClass = "down";
 
         const volume = row.volume != null ? Number(row.volume).toLocaleString() : "—";
+        const name = row.name || row.ticker || "";
+        const date = (row.latest_date || "").toString().slice(0, 10);
 
         html += `
           <tr>
-            <td><strong>${row.name || row.ticker}</strong><br><small style="color:#64748b">${row.ticker}</small></td>
+            <td><strong>${row.ticker}</strong></td>
+            <td>${name}</td>
             <td class="${pctClass}">${pct > 0 ? "+" : ""}${pct}%</td>
             <td>${row.latest_close}</td>
             <td>${row.week_ago_close}</td>
-            <td>${(row.latest_date || "").slice(0, 10)}</td>
+            <td>${date}</td>
             <td>${volume}</td>
           </tr>
         `;
@@ -228,7 +234,7 @@
       html += `</tbody></table></div>`;
       document.getElementById("content").innerHTML = html;
 
-      // Add click handlers for sorting
+      // Click-to-sort handlers
       document.querySelectorAll("th[data-key]").forEach(th => {
         th.addEventListener("click", () => {
           const key = th.dataset.key;
@@ -236,7 +242,7 @@
             sortAsc = !sortAsc;
           } else {
             sortKey = key;
-            sortAsc = (key === "ticker" || key === "latest_date");
+            sortAsc = (key === "ticker" || key === "name" || key === "latest_date");
           }
           renderTable();
         });
