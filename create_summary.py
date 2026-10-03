@@ -15,6 +15,16 @@ conn = sqlite3.connect("ftse250_data.db")
 latest_date = pd.read_sql_query("SELECT MAX(date) as d FROM prices", conn).iloc[0]["d"]
 print(f"Latest date in database: {latest_date}")
 
+# Load company names from Ticker.csv
+try:
+    tickers_df = pd.read_csv("Ticker.csv")
+    if "Symbol" in tickers_df.columns and "Company Name" in tickers_df.columns:
+        name_map = dict(zip(tickers_df["Symbol"], tickers_df["Company Name"]))
+    else:
+        name_map = {}
+except Exception:
+    name_map = {}
+
 # Pull recent data (enough for 1 week calculation)
 df = pd.read_sql_query("""
     SELECT ticker, date, close, volume
@@ -48,10 +58,11 @@ for ticker, group in df.groupby("ticker"):
     
     summary_rows.append({
         "ticker": ticker,
-        "latest_date": latest_day,
+        "name": name_map.get(ticker, ticker),
+        "pct_change_1w": round(float(pct_change), 2),
         "latest_close": round(float(latest_close), 2),
         "week_ago_close": round(float(week_ago_close), 2),
-        "pct_change_1w": round(float(pct_change), 2),
+        "latest_date": latest_day,
         "volume": int(latest_volume) if latest_volume is not None else None
     })
 
