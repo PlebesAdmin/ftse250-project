@@ -18,12 +18,26 @@ print(f"Latest date in database: {latest_date}")
 # Load company names from Ticker.csv
 try:
     tickers_df = pd.read_csv("Ticker.csv")
-    if "Symbol" in tickers_df.columns and "Company Name" in tickers_df.columns:
-        name_map = dict(zip(tickers_df["Symbol"], tickers_df["Company Name"]))
+    # Clean column names (remove extra spaces)
+    tickers_df.columns = [c.strip() for c in tickers_df.columns]
+    
+    # Support different possible column names
+    symbol_col = None
+    name_col = None
+    for col in tickers_df.columns:
+        if col.lower() in ["symbol", "ticker"]:
+            symbol_col = col
+        if "company" in col.lower() or "name" in col.lower():
+            name_col = col
+    
+    if symbol_col and name_col:
+        name_map = dict(zip(tickers_df[symbol_col].str.strip(), tickers_df[name_col].str.strip()))
     else:
         name_map = {}
-except Exception:
+        print("Warning: could not find Symbol / Company name columns")
+except Exception as e:
     name_map = {}
+    print(f"Warning loading names: {e}")
 
 # Pull recent data (enough for 1 week calculation)
 df = pd.read_sql_query("""
