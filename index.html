@@ -5,73 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FTSE 250 Weekly Summary</title>
   <style>
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --header: #0f172a;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --up: #16a34a;
+      --down: #dc2626;
+    }
+    * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f5f7fa;
+      background: var(--bg);
       margin: 0;
-      padding: 20px;
-      color: #1a1a1a;
+      padding: 16px;
+      color: var(--text);
+      line-height: 1.4;
     }
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      background: white;
+      background: var(--card);
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       overflow: hidden;
     }
     header {
-      background: #0f172a;
+      background: var(--header);
       color: white;
-      padding: 24px 30px;
+      padding: 20px 24px;
     }
     header h1 {
-      margin: 0 0 6px 0;
-      font-size: 1.6rem;
+      margin: 0 0 4px 0;
+      font-size: 1.45rem;
+      font-weight: 700;
     }
     header p {
       margin: 0;
-      opacity: 0.8;
+      opacity: 0.85;
+      font-size: 0.9rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 20px 8px;
+      align-items: center;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+    }
+    .search-box {
+      flex: 1;
+      min-width: 180px;
+      padding: 9px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
       font-size: 0.95rem;
+      outline: none;
+    }
+    .search-box:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      white-space: nowrap;
     }
     .table-wrapper {
       overflow-x: auto;
-      padding: 10px 20px 30px;
+      padding: 0 0 20px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
+      min-width: 640px;
     }
     th {
       text-align: left;
-      padding: 14px 12px;
+      padding: 13px 14px;
       background: #f1f5f9;
-      border-bottom: 2px solid #e2e8f0;
+      border-bottom: 2px solid var(--border);
       position: sticky;
       top: 0;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
     }
+    th:hover { background: #e2e8f0; }
+    th .arrow { font-size: 0.75rem; opacity: 0.5; margin-left: 4px; }
     td {
-      padding: 12px;
+      padding: 11px 14px;
       border-bottom: 1px solid #f1f5f9;
     }
-    tr:hover {
-      background: #f8fafc;
-    }
-    .up { color: #16a34a; font-weight: 600; }
-    .down { color: #dc2626; font-weight: 600; }
-    .neutral { color: #64748b; }
-    .loading {
+    tr:hover { background: #f8fafc; }
+    .up { color: var(--up); font-weight: 600; }
+    .down { color: var(--down); font-weight: 600; }
+    .neutral { color: var(--muted); }
+    .loading, .error {
       text-align: center;
-      padding: 60px 20px;
-      color: #64748b;
+      padding: 50px 20px;
+      color: var(--muted);
     }
     footer {
       text-align: center;
-      padding: 16px;
-      font-size: 0.85rem;
-      color: #64748b;
+      padding: 14px;
+      font-size: 0.8rem;
+      color: var(--muted);
       background: #f8fafc;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      body { padding: 8px; }
+      header { padding: 16px; }
+      header h1 { font-size: 1.25rem; }
+      .toolbar { padding: 12px 14px; }
+      td, th { padding: 10px 10px; font-size: 0.88rem; }
     }
   </style>
 </head>
@@ -82,9 +134,12 @@
       <p>Latest close + 1-week % change • Updated automatically</p>
     </header>
 
-    <div id="content" class="loading">
-      Loading data…
+    <div class="toolbar">
+      <input type="text" class="search-box" id="search" placeholder="Search ticker…" autocomplete="off">
+      <div class="meta" id="last-updated">Loading…</div>
     </div>
+
+    <div id="content" class="loading">Loading data…</div>
 
     <footer>
       Free zero-cost pipeline • Data from Yahoo Finance via GitHub Actions
@@ -92,67 +147,102 @@
   </div>
 
   <script>
+    let allData = [];
+    let sortKey = "pct_change_1w";
+    let sortAsc = false;
+
     async function loadData() {
       try {
-        const response = await fetch('summary.json?t=' + new Date().getTime());
-        const data = await response.json();
+        const response = await fetch("summary.json?t=" + Date.now());
+        allData = await response.json();
 
-        if (!data || data.length === 0) {
-          document.getElementById('content').innerHTML = '<p class="loading">No data available yet.</p>';
+        if (!allData || allData.length === 0) {
+          document.getElementById("content").innerHTML = '<p class="loading">No data available yet.</p>';
           return;
         }
 
-        let html = `
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Ticker</th>
-                  <th>Latest Date</th>
-                  <th>Latest Close</th>
-                  <th>Week Ago Close</th>
-                  <th>1-Week %</th>
-                  <th>Volume</th>
-                </tr>
-              </thead>
-              <tbody>
-        `;
+        // Show last updated from the newest date in the data
+        const latestDate = allData.reduce((max, r) => r.latest_date > max ? r.latest_date : max, "");
+        document.getElementById("last-updated").textContent = 
+          "Data as of " + latestDate.slice(0, 10) + " • " + allData.length + " tickers";
 
-        data.forEach(row => {
-          const pct = row.pct_change_1w;
-          let pctClass = 'neutral';
-          if (pct > 0) pctClass = 'up';
-          if (pct < 0) pctClass = 'down';
-
-          const volume = row.volume ? row.volume.toLocaleString() : '—';
-
-          html += `
-            <tr>
-              <td><strong>${row.ticker}</strong></td>
-              <td>${row.latest_date}</td>
-              <td>${row.latest_close}</td>
-              <td>${row.week_ago_close}</td>
-              <td class="${pctClass}">${pct > 0 ? '+' : ''}${pct}%</td>
-              <td>${volume}</td>
-            </tr>
-          `;
-        });
-
-        html += `
-              </tbody>
-            </table>
-          </div>
-        `;
-
-        document.getElementById('content').innerHTML = html;
+        renderTable();
       } catch (err) {
-        document.getElementById('content').innerHTML = `
-          <p class="loading">Could not load data. The Action may still be running or summary.json is missing.</p>
-        `;
+        document.getElementById("content").innerHTML = 
+          '<p class="error">Could not load data. Try refreshing in a minute.</p>';
         console.error(err);
       }
     }
 
+    function renderTable() {
+      const search = document.getElementById("search").value.toLowerCase().trim();
+      let filtered = allData.filter(r => r.ticker.toLowerCase().includes(search));
+
+      // Sort
+      filtered.sort((a, b) => {
+        let va = a[sortKey];
+        let vb = b[sortKey];
+        if (typeof va === "string") {
+          return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+        }
+        return sortAsc ? va - vb : vb - va;
+      });
+
+      let html = `
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th data-key="ticker">Ticker <span class="arrow"></span></th>
+                <th data-key="latest_date">Latest Date <span class="arrow"></span></th>
+                <th data-key="latest_close">Latest Close <span class="arrow"></span></th>
+                <th data-key="week_ago_close">Week Ago <span class="arrow"></span></th>
+                <th data-key="pct_change_1w">1-Week % <span class="arrow"></span></th>
+                <th data-key="volume">Volume <span class="arrow"></span></th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      filtered.forEach(row => {
+        const pct = row.pct_change_1w;
+        let pctClass = "neutral";
+        if (pct > 0) pctClass = "up";
+        if (pct < 0) pctClass = "down";
+
+        const volume = row.volume != null ? Number(row.volume).toLocaleString() : "—";
+
+        html += `
+          <tr>
+            <td><strong>${row.ticker}</strong></td>
+            <td>${(row.latest_date || "").slice(0, 10)}</td>
+            <td>${row.latest_close}</td>
+            <td>${row.week_ago_close}</td>
+            <td class="${pctClass}">${pct > 0 ? "+" : ""}${pct}%</td>
+            <td>${volume}</td>
+          </tr>
+        `;
+      });
+
+      html += `</tbody></table></div>`;
+      document.getElementById("content").innerHTML = html;
+
+      // Add click handlers for sorting
+      document.querySelectorAll("th[data-key]").forEach(th => {
+        th.addEventListener("click", () => {
+          const key = th.dataset.key;
+          if (sortKey === key) {
+            sortAsc = !sortAsc;
+          } else {
+            sortKey = key;
+            sortAsc = (key === "ticker" || key === "latest_date");
+          }
+          renderTable();
+        });
+      });
+    }
+
+    document.getElementById("search").addEventListener("input", renderTable);
     loadData();
   </script>
 </body>
