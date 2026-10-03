@@ -194,10 +194,11 @@
             <thead>
               <tr>
                 <th data-key="ticker">Ticker <span class="arrow"></span></th>
-                <th data-key="latest_date">Latest Date <span class="arrow"></span></th>
+                <th data-key="name">Company <span class="arrow"></span></th>
+                <th data-key="pct_change_1w">1-Week % <span class="arrow"></span></th>
                 <th data-key="latest_close">Latest Close <span class="arrow"></span></th>
                 <th data-key="week_ago_close">Week Ago <span class="arrow"></span></th>
-                <th data-key="pct_change_1w">1-Week % <span class="arrow"></span></th>
+                <th data-key="latest_date">Latest Date <span class="arrow"></span></th>
                 <th data-key="volume">Volume <span class="arrow"></span></th>
               </tr>
             </thead>
@@ -214,11 +215,11 @@
 
         html += `
           <tr>
-            <td><strong>${row.ticker}</strong></td>
-            <td>${(row.latest_date || "").slice(0, 10)}</td>
+            <td><strong>${row.name || row.ticker}</strong><br><small style="color:#64748b">${row.ticker}</small></td>
+            <td class="${pctClass}">${pct > 0 ? "+" : ""}${pct}%</td>
             <td>${row.latest_close}</td>
             <td>${row.week_ago_close}</td>
-            <td class="${pctClass}">${pct > 0 ? "+" : ""}${pct}%</td>
+            <td>${(row.latest_date || "").slice(0, 10)}</td>
             <td>${volume}</td>
           </tr>
         `;
