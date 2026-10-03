@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTSE 250 Weekly Summary</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      color: #1a1a1a;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 24px 30px;
+    }
+    header h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.6rem;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.8;
+      font-size: 0.95rem;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      padding: 10px 20px 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th {
+      text-align: left;
+      padding: 14px 12px;
+      background: #f1f5f9;
+      border-bottom: 2px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    tr:hover {
+      background: #f8fafc;
+    }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #64748b; }
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: #64748b;
+    }
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+      color: #64748b;
+      background: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FTSE 250 Weekly Summary</h1>
+      <p>Latest close + 1-week % change • Updated automatically</p>
+    </header>
+
+    <div id="content" class="loading">
+      Loading data…
+    </div>
+
+    <footer>
+      Free zero-cost pipeline • Data from Yahoo Finance via GitHub Actions
+    </footer>
+  </div>
+
+  <script>
+    async function loadData() {
+      try {
+        const response = await fetch('summary.json?t=' + new Date().getTime());
+        const data = await response.json();
+
+        if (!data || data.length === 0) {
+          document.getElementById('content').innerHTML = '<p class="loading">No data available yet.</p>';
+          return;
+        }
+
+        let html = `
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Latest Date</th>
+                  <th>Latest Close</th>
+                  <th>Week Ago Close</th>
+                  <th>1-Week %</th>
+                  <th>Volume</th>
+                </tr>
+              </thead>
+              <tbody>
+        `;
+
+        data.forEach(row => {
+          const pct = row.pct_change_1w;
+          let pctClass = 'neutral';
+          if (pct > 0) pctClass = 'up';
+          if (pct < 0) pctClass = 'down';
+
+          const volume = row.volume ? row.volume.toLocaleString() : '—';
+
+          html += `
+            <tr>
+              <td><strong>${row.ticker}</strong></td>
+              <td>${row.latest_date}</td>
+              <td>${row.latest_close}</td>
+              <td>${row.week_ago_close}</td>
+              <td class="${pctClass}">${pct > 0 ? '+' : ''}${pct}%</td>
+              <td>${volume}</td>
+            </tr>
+          `;
+        });
+
+        html += `
+              </tbody>
+            </table>
+          </div>
+        `;
+
+        document.getElementById('content').innerHTML = html;
+      } catch (err) {
+        document.getElementById('content').innerHTML = `
+          <p class="loading">Could not load data. The Action may still be running or summary.json is missing.</p>
+        `;
+        console.error(err);
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
