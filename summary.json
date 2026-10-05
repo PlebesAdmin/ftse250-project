@@ -90,15 +90,6 @@
     "volume":352324
   },
   {
-    "ticker":"TUI1.DE",
-    "name":"TUI AG",
-    "pct_change_1w":4.45,
-    "latest_close":6.9,
-    "week_ago_close":6.6,
-    "latest_date":"2026-10-02 00:00:00",
-    "volume":5117367
-  },
-  {
     "ticker":"MGAM.L",
     "name":"Morgan Advanced Materials plc",
     "pct_change_1w":4.44,
@@ -106,15 +97,6 @@
     "week_ago_close":259.0,
     "latest_date":"2026-10-02 00:00:00",
     "volume":1086493
-  },
-  {
-    "ticker":"ZIG.L",
-    "name":"Zigup Plc",
-    "pct_change_1w":4.32,
-    "latest_close":447.0,
-    "week_ago_close":428.5,
-    "latest_date":"2026-10-02 00:00:00",
-    "volume":397868
   },
   {
     "ticker":"ESNT.L",
@@ -315,15 +297,6 @@
     "volume":1211357
   },
   {
-    "ticker":"MGNS.L",
-    "name":"Morgan Sindall Group plc",
-    "pct_change_1w":0.38,
-    "latest_close":4224.0,
-    "week_ago_close":4208.0,
-    "latest_date":"2026-10-02 00:00:00",
-    "volume":65792
-  },
-  {
     "ticker":"PETS.L",
     "name":"Pets at Home Group Plc",
     "pct_change_1w":0.38,
@@ -331,6 +304,15 @@
     "week_ago_close":211.2,
     "latest_date":"2026-10-02 00:00:00",
     "volume":726212
+  },
+  {
+    "ticker":"MGNS.L",
+    "name":"Morgan Sindall Group plc",
+    "pct_change_1w":0.38,
+    "latest_close":4224.0,
+    "week_ago_close":4208.0,
+    "latest_date":"2026-10-02 00:00:00",
+    "volume":65792
   },
   {
     "ticker":"SNR.L",
@@ -367,15 +349,6 @@
     "week_ago_close":639.0,
     "latest_date":"2026-10-02 00:00:00",
     "volume":660276
-  },
-  {
-    "ticker":"WOSG.L",
-    "name":"Watches of Switzerland Group plc",
-    "pct_change_1w":0.0,
-    "latest_close":672.5,
-    "week_ago_close":672.5,
-    "latest_date":"2026-10-02 00:00:00",
-    "volume":404856
   },
   {
     "ticker":"MTO.L",
@@ -567,15 +540,6 @@
     "volume":54777
   },
   {
-    "ticker":"TPK.L",
-    "name":"Travis Perkins plc",
-    "pct_change_1w":-2.26,
-    "latest_close":585.0,
-    "week_ago_close":598.5,
-    "latest_date":"2026-10-02 00:00:00",
-    "volume":506442
-  },
-  {
     "ticker":"PZC.L",
     "name":"PZ Cussons Plc",
     "pct_change_1w":-2.26,
@@ -583,6 +547,15 @@
     "week_ago_close":97.2,
     "latest_date":"2026-10-02 00:00:00",
     "volume":920354
+  },
+  {
+    "ticker":"TPK.L",
+    "name":"Travis Perkins plc",
+    "pct_change_1w":-2.26,
+    "latest_close":585.0,
+    "week_ago_close":598.5,
+    "latest_date":"2026-10-02 00:00:00",
+    "volume":506442
   },
   {
     "ticker":"CKN.L",
@@ -727,5 +700,32 @@
     "week_ago_close":594.0,
     "latest_date":"2026-10-02 00:00:00",
     "volume":569387
+  },
+  {
+    "ticker":"TUI1.DE",
+    "name":"TUI AG",
+    "pct_change_1w":null,
+    "latest_close":null,
+    "week_ago_close":null,
+    "latest_date":"2026-10-05 00:00:00",
+    "volume":3199293
+  },
+  {
+    "ticker":"WOSG.L",
+    "name":"Watches of Switzerland Group plc",
+    "pct_change_1w":null,
+    "latest_close":null,
+    "week_ago_close":682.0,
+    "latest_date":"2026-10-05 00:00:00",
+    "volume":325219
+  },
+  {
+    "ticker":"ZIG.L",
+    "name":"Zigup Plc",
+    "pct_change_1w":null,
+    "latest_close":null,
+    "week_ago_close":433.0,
+    "latest_date":"2026-10-05 00:00:00",
+    "volume":362222
   }
 ]
