@@ -3,658 +3,658 @@
     "ticker":"AML.L",
     "name":"Aston Martin Lagonda global Holdings plc",
     "pct_change_1w":null,
-    "latest_close":32.1,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":771051
+    "latest_close":null,
+    "week_ago_close":33.9,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":560009
   },
   {
     "ticker":"ASC.L",
     "name":"Ardmore Shipping Corporation",
     "pct_change_1w":null,
-    "latest_close":500.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":308324
+    "latest_close":null,
+    "week_ago_close":462.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":260047
   },
   {
     "ticker":"ATG.L",
     "name":"Auction Technology Group plc",
     "pct_change_1w":null,
-    "latest_close":452.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":183743
+    "latest_close":null,
+    "week_ago_close":481.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":196150
   },
   {
     "ticker":"BAB.L",
     "name":"Babcock International Group PLC",
     "pct_change_1w":null,
-    "latest_close":975.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":2994617
+    "latest_close":null,
+    "week_ago_close":995.4,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":3918309
   },
   {
     "ticker":"BAG.L",
     "name":"A.G. BARR p.l.c.",
     "pct_change_1w":null,
-    "latest_close":605.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":169689
+    "latest_close":null,
+    "week_ago_close":602.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":119447
   },
   {
     "ticker":"BBY.L",
     "name":"Balfour Beatty plc",
     "pct_change_1w":null,
-    "latest_close":875.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":825749
+    "latest_close":null,
+    "week_ago_close":892.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1055404
   },
   {
     "ticker":"BOY.L",
     "name":"Bodycote plc",
     "pct_change_1w":null,
-    "latest_close":918.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":286771
+    "latest_close":null,
+    "week_ago_close":920.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":96055
   },
   {
     "ticker":"BP.L",
     "name":"BP p.l.c.",
     "pct_change_1w":null,
-    "latest_close":551.2,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":29059243
+    "latest_close":null,
+    "week_ago_close":567.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":26870618
   },
   {
     "ticker":"BREE.L",
     "name":"Breedon Group plc",
     "pct_change_1w":null,
-    "latest_close":320.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1839552
+    "latest_close":null,
+    "week_ago_close":330.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":3605787
   },
   {
     "ticker":"BWY.L",
     "name":"Bellway p.l.c.",
     "pct_change_1w":null,
-    "latest_close":2278.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":667091
+    "latest_close":null,
+    "week_ago_close":2310.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":353200
   },
   {
     "ticker":"CCR.L",
     "name":"C&C Group plc",
     "pct_change_1w":null,
-    "latest_close":104.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":389782
+    "latest_close":null,
+    "week_ago_close":102.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":499958
   },
   {
     "ticker":"CHG.L",
     "name":"Chemring Group PLC",
     "pct_change_1w":null,
-    "latest_close":520.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1452286
+    "latest_close":null,
+    "week_ago_close":510.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1374229
   },
   {
     "ticker":"CKN.L",
     "name":"Clarkson PLC",
     "pct_change_1w":null,
-    "latest_close":4608.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":94297
+    "latest_close":null,
+    "week_ago_close":4646.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":57466
   },
   {
     "ticker":"COA.L",
     "name":"Coats Group plc",
     "pct_change_1w":null,
-    "latest_close":74.55,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":3764272
+    "latest_close":null,
+    "week_ago_close":76.9,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2207350
   },
   {
     "ticker":"CRST.L",
     "name":"Crest Nicholson Holdings plc",
     "pct_change_1w":null,
-    "latest_close":64.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":442458
+    "latest_close":null,
+    "week_ago_close":63.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":594202
   },
   {
     "ticker":"CURY.L",
     "name":"Currys plc",
     "pct_change_1w":null,
-    "latest_close":147.9,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":4777001
+    "latest_close":null,
+    "week_ago_close":145.1,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1265298
   },
   {
     "ticker":"CWK.L",
     "name":"Cranswick plc",
     "pct_change_1w":null,
-    "latest_close":5580.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":88546
+    "latest_close":null,
+    "week_ago_close":5530.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":95495
   },
   {
     "ticker":"CWR.L",
     "name":"Ceres Power Holdings plc",
     "pct_change_1w":null,
-    "latest_close":233.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":4291057
+    "latest_close":null,
+    "week_ago_close":264.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2809740
   },
   {
     "ticker":"DEC.L",
     "name":"Diversified Energy Company PLC",
     "pct_change_1w":null,
-    "latest_close":990.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":41994
+    "latest_close":null,
+    "week_ago_close":1034.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":33822
   },
   {
     "ticker":"DNLM.L",
     "name":"Dunelm Group plc",
     "pct_change_1w":null,
-    "latest_close":894.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":904271
+    "latest_close":null,
+    "week_ago_close":896.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":328830
   },
   {
     "ticker":"DOCS.L",
     "name":"Dr. Martens plc",
     "pct_change_1w":null,
-    "latest_close":56.1,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":5430800
+    "latest_close":null,
+    "week_ago_close":54.1,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":3844260
   },
   {
     "ticker":"DOM.L",
     "name":"Domino's Pizza Group plc",
     "pct_change_1w":null,
-    "latest_close":235.2,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1102684
+    "latest_close":null,
+    "week_ago_close":228.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1617648
   },
   {
     "ticker":"DSCV.L",
     "name":"discoverIE Group plc",
     "pct_change_1w":null,
-    "latest_close":793.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":193720
+    "latest_close":null,
+    "week_ago_close":811.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":131287
   },
   {
     "ticker":"ELM.L",
     "name":"Elementis plc",
     "pct_change_1w":null,
-    "latest_close":190.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":696432
+    "latest_close":null,
+    "week_ago_close":194.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":800422
   },
   {
     "ticker":"ENOG.L",
     "name":"Energean plc",
     "pct_change_1w":null,
-    "latest_close":684.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":471512
+    "latest_close":null,
+    "week_ago_close":692.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":469648
   },
   {
     "ticker":"ESNT.L",
     "name":"Essentra plc",
     "pct_change_1w":null,
-    "latest_close":113.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":192103
+    "latest_close":null,
+    "week_ago_close":114.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":161394
   },
   {
     "ticker":"EVOK.L",
     "name":"evoke plc",
     "pct_change_1w":null,
-    "latest_close":46.7,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":311224
+    "latest_close":null,
+    "week_ago_close":45.85,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":308512
   },
   {
     "ticker":"EZJ.L",
     "name":"easyJet plc",
     "pct_change_1w":null,
-    "latest_close":689.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1155272
+    "latest_close":null,
+    "week_ago_close":689.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1426402
   },
   {
     "ticker":"FAN.L",
     "name":"Volution Group plc",
     "pct_change_1w":null,
-    "latest_close":635.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":526216
+    "latest_close":null,
+    "week_ago_close":653.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":186817
   },
   {
     "ticker":"FGP.L",
     "name":"FirstGroup plc",
     "pct_change_1w":null,
-    "latest_close":228.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1660902
+    "latest_close":null,
+    "week_ago_close":237.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":4208890
   },
   {
     "ticker":"FXPO.L",
     "name":"Ferrexpo plc",
     "pct_change_1w":null,
-    "latest_close":26.54,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1540961
+    "latest_close":null,
+    "week_ago_close":28.86,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2110720
   },
   {
     "ticker":"GAW.L",
     "name":"Games Workshop Group PLC",
     "pct_change_1w":null,
-    "latest_close":16920.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":82602
+    "latest_close":null,
+    "week_ago_close":16800.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":68112
   },
   {
     "ticker":"GDWN.L",
     "name":"Goodwin PLC",
     "pct_change_1w":null,
-    "latest_close":14300.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":9226
+    "latest_close":null,
+    "week_ago_close":14620.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":5155
   },
   {
     "ticker":"GEN.L",
     "name":"Genuit Group plc",
     "pct_change_1w":null,
-    "latest_close":258.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1028742
+    "latest_close":null,
+    "week_ago_close":266.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":941554
   },
   {
     "ticker":"GFTU.L",
     "name":"Grafton Group plc",
     "pct_change_1w":null,
-    "latest_close":1026.6,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":478547
+    "latest_close":null,
+    "week_ago_close":1034.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":143308
   },
   {
     "ticker":"GNC.L",
     "name":"Greencore Group plc",
     "pct_change_1w":null,
-    "latest_close":296.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":675901
+    "latest_close":null,
+    "week_ago_close":298.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":811255
   },
   {
     "ticker":"GRG.L",
     "name":"Greggs plc",
     "pct_change_1w":null,
-    "latest_close":2418.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":873819
+    "latest_close":null,
+    "week_ago_close":2358.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":300980
   },
   {
     "ticker":"HAS.L",
     "name":"Hays plc",
     "pct_change_1w":null,
-    "latest_close":76.55,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":14574622
+    "latest_close":null,
+    "week_ago_close":58.45,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":7223337
   },
   {
     "ticker":"HBR.L",
     "name":"Harbour Energy plc",
     "pct_change_1w":null,
-    "latest_close":265.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":11088099
+    "latest_close":null,
+    "week_ago_close":273.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":3792954
   },
   {
     "ticker":"HFG.L",
     "name":"Hilton Food Group plc",
     "pct_change_1w":null,
-    "latest_close":720.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":115048
+    "latest_close":null,
+    "week_ago_close":734.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":224657
   },
   {
     "ticker":"HILS.L",
     "name":"Hill & Smith PLC",
     "pct_change_1w":null,
-    "latest_close":2870.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":370800
+    "latest_close":null,
+    "week_ago_close":2910.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":123314
   },
   {
     "ticker":"HTG.L",
     "name":"Hunting PLC",
     "pct_change_1w":null,
-    "latest_close":362.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":401714
+    "latest_close":null,
+    "week_ago_close":376.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":270406
   },
   {
     "ticker":"IBST.L",
     "name":"Ibstock plc",
     "pct_change_1w":null,
-    "latest_close":75.65,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1340708
+    "latest_close":null,
+    "week_ago_close":74.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":588684
   },
   {
     "ticker":"INCH.L",
     "name":"Inchcape plc",
     "pct_change_1w":null,
-    "latest_close":644.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1081249
+    "latest_close":null,
+    "week_ago_close":647.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":905433
   },
   {
     "ticker":"ITH.L",
     "name":"Ithaca Energy plc",
     "pct_change_1w":null,
-    "latest_close":247.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":2116206
+    "latest_close":null,
+    "week_ago_close":258.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1386361
   },
   {
     "ticker":"JDW.L",
     "name":"J D Wetherspoon plc",
     "pct_change_1w":null,
-    "latest_close":1027.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":200635
+    "latest_close":null,
+    "week_ago_close":1026.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":287967
   },
   {
     "ticker":"JMAT.L",
     "name":"Johnson Matthey Plc",
     "pct_change_1w":null,
-    "latest_close":2320.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":536289
+    "latest_close":null,
+    "week_ago_close":2406.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":695249
   },
   {
     "ticker":"KLR.L",
     "name":"Keller Group plc",
     "pct_change_1w":null,
-    "latest_close":2976.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":396803
+    "latest_close":null,
+    "week_ago_close":3090.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":129110
   },
   {
     "ticker":"MAB.L",
     "name":"Mitchells & Butlers plc",
     "pct_change_1w":null,
-    "latest_close":318.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":429133
+    "latest_close":null,
+    "week_ago_close":317.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":216692
   },
   {
     "ticker":"MCG.L",
     "name":"Mobico Group Plc",
     "pct_change_1w":null,
-    "latest_close":44.22,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1373640
+    "latest_close":null,
+    "week_ago_close":44.32,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1403997
   },
   {
     "ticker":"MEGP.L",
     "name":"ME Group International plc",
     "pct_change_1w":null,
-    "latest_close":103.6,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1423130
+    "latest_close":null,
+    "week_ago_close":103.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":892544
   },
   {
     "ticker":"MGAM.L",
     "name":"Morgan Advanced Materials plc",
     "pct_change_1w":null,
-    "latest_close":266.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":473105
+    "latest_close":null,
+    "week_ago_close":274.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":698269
   },
   {
     "ticker":"MGNS.L",
     "name":"Morgan Sindall Group plc",
     "pct_change_1w":null,
-    "latest_close":4394.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":74226
+    "latest_close":null,
+    "week_ago_close":4552.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":68564
   },
   {
     "ticker":"MOON.L",
     "name":"Moonpig Group plc",
     "pct_change_1w":null,
-    "latest_close":282.6,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1066280
+    "latest_close":null,
+    "week_ago_close":286.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1036123
   },
   {
     "ticker":"MSLH.L",
     "name":"Marshalls plc",
     "pct_change_1w":null,
-    "latest_close":167.2,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1474782
+    "latest_close":null,
+    "week_ago_close":176.2,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":441408
   },
   {
     "ticker":"MTO.L",
     "name":"Mitie Group plc",
     "pct_change_1w":null,
-    "latest_close":208.2,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":11487683
+    "latest_close":null,
+    "week_ago_close":209.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":15363451
   },
   {
     "ticker":"PAGE.L",
     "name":"PageGroup plc",
     "pct_change_1w":null,
-    "latest_close":247.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":5705391
+    "latest_close":null,
+    "week_ago_close":212.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":711091
   },
   {
     "ticker":"PETS.L",
     "name":"Pets at Home Group Plc",
     "pct_change_1w":null,
-    "latest_close":275.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":991511
+    "latest_close":null,
+    "week_ago_close":270.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":618564
   },
   {
     "ticker":"PFD.L",
     "name":"Premier Foods plc",
     "pct_change_1w":null,
-    "latest_close":192.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1042678
+    "latest_close":null,
+    "week_ago_close":195.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1004982
   },
   {
     "ticker":"PSN.L",
     "name":"Persimmon Plc",
     "pct_change_1w":null,
-    "latest_close":1268.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1046231
+    "latest_close":null,
+    "week_ago_close":1293.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":939557
   },
   {
     "ticker":"PTEC.L",
     "name":"Playtech plc",
     "pct_change_1w":null,
-    "latest_close":350.2,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":343128
+    "latest_close":null,
+    "week_ago_close":365.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":235334
   },
   {
     "ticker":"PZC.L",
     "name":"PZ Cussons Plc",
     "pct_change_1w":null,
-    "latest_close":95.3,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":375431
+    "latest_close":null,
+    "week_ago_close":99.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":627585
   },
   {
     "ticker":"QQ.L",
     "name":"QinetiQ Group plc",
     "pct_change_1w":null,
-    "latest_close":482.6,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1020226
+    "latest_close":null,
+    "week_ago_close":500.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":951789
   },
   {
     "ticker":"RHIM.L",
     "name":"RHI Magnesita N.V.",
     "pct_change_1w":null,
-    "latest_close":2625.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":17014
+    "latest_close":null,
+    "week_ago_close":2805.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":60102
   },
   {
     "ticker":"ROR.L",
     "name":"Rotork plc",
     "pct_change_1w":null,
-    "latest_close":493.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":2392461
+    "latest_close":null,
+    "week_ago_close":493.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1084602
   },
   {
     "ticker":"SHEL.L",
     "name":"Shell plc",
     "pct_change_1w":null,
-    "latest_close":3595.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":8041078
+    "latest_close":null,
+    "week_ago_close":3665.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":6255415
   },
   {
     "ticker":"SMWH.L",
     "name":"WH Smith PLC",
     "pct_change_1w":null,
-    "latest_close":380.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":753415
+    "latest_close":null,
+    "week_ago_close":398.6,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":605167
   },
   {
     "ticker":"SRP.L",
     "name":"Serco Group plc",
     "pct_change_1w":null,
-    "latest_close":258.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1922896
+    "latest_close":null,
+    "week_ago_close":287.4,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2555893
   },
   {
     "ticker":"SSPG.L",
     "name":"SSP Group plc",
     "pct_change_1w":null,
-    "latest_close":189.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":10690856
+    "latest_close":null,
+    "week_ago_close":184.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":9485874
   },
   {
     "ticker":"STEM.L",
     "name":"SThree plc",
     "pct_change_1w":null,
-    "latest_close":311.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":876798
+    "latest_close":null,
+    "week_ago_close":299.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":582418
   },
   {
     "ticker":"TATE.L",
     "name":"Tate & Lyle plc",
     "pct_change_1w":null,
-    "latest_close":562.5,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":2736359
+    "latest_close":null,
+    "week_ago_close":561.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":317604
   },
   {
     "ticker":"TPK.L",
     "name":"Travis Perkins plc",
     "pct_change_1w":null,
-    "latest_close":643.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":490922
+    "latest_close":null,
+    "week_ago_close":645.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":885814
   },
   {
     "ticker":"TRN.L",
     "name":"Trainline Plc",
     "pct_change_1w":null,
-    "latest_close":191.4,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1565071
+    "latest_close":null,
+    "week_ago_close":192.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":714012
   },
   {
     "ticker":"TUI1.DE",
@@ -662,61 +662,61 @@
     "pct_change_1w":null,
     "latest_close":null,
     "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":2379062
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2334080
   },
   {
     "ticker":"VCT.L",
     "name":"Victrex plc",
     "pct_change_1w":null,
-    "latest_close":922.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":100925
+    "latest_close":null,
+    "week_ago_close":942.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":142870
   },
   {
     "ticker":"VSVS.L",
     "name":"Vesuvius plc",
     "pct_change_1w":null,
-    "latest_close":460.8,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":874681
+    "latest_close":null,
+    "week_ago_close":459.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":1596828
   },
   {
     "ticker":"VTY.L",
     "name":"Vistry Group PLC",
     "pct_change_1w":null,
-    "latest_close":235.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":1883259
+    "latest_close":null,
+    "week_ago_close":249.8,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":2102594
   },
   {
     "ticker":"WIZZ.L",
     "name":"Wizz Air Holdings Plc",
     "pct_change_1w":null,
-    "latest_close":1128.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":308984
+    "latest_close":null,
+    "week_ago_close":1131.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":998749
   },
   {
     "ticker":"WOSG.L",
     "name":"Watches of Switzerland Group plc",
     "pct_change_1w":null,
     "latest_close":null,
-    "week_ago_close":751.0,
-    "latest_date":"2026-11-17 00:00:00",
-    "volume":293062
+    "week_ago_close":785.0,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":413794
   },
   {
     "ticker":"ZIG.L",
     "name":"Zigup Plc",
     "pct_change_1w":null,
-    "latest_close":454.0,
-    "week_ago_close":null,
-    "latest_date":"2026-11-18 00:00:00",
-    "volume":278674
+    "latest_close":null,
+    "week_ago_close":467.5,
+    "latest_date":"2026-11-19 00:00:00",
+    "volume":958474
   }
 ]
